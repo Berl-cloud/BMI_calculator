@@ -1,75 +1,99 @@
 
-.main{
-    background-image: linear-gradient(to bottom , white 10% ,  #ffe380 90% );
-    width: 40%;
-    border-radius: 10px;
-    border: 0.5px solid gray;
-    height: 400px;
-    margin: auto;
-    padding-right: 15px;
-    padding-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr;
-    
-}
-
 .head-bar{
     background-color: white;
     width: 60%;
     margin: auto;
+    padding-left: 100px;
+    
 }
+
+ul{
+    padding-left: 22%;
+}
+
+h1{
+    padding-left: 18%;
+    
+}
+
 .head-bar p{
     color: orangered;
 }
-.input-value{
-    /* border: 2px solid mediumorchid; */
-    width: 90%;
-    padding: 10px;
-    height: 200px;
+
+
+.container{
+    background-image: linear-gradient(to bottom , white 10% ,  #ffe380 90% );
+    width: 40%;
+    border: 3px solid #cdcdcd;
+    box-shadow: 0px 5px 5px 5px #cdcdcd;
+    
+    margin: auto;
+    border-radius: 10px;
+}
+
+#results{
+    text-align: center;
+    border-radius: 5px;
+    width: 99%;
+    font-weight: bold;
+    padding-top: 2%;
+    font-size: 1.3em;
+    color: rgb(245, 96, 42);
+}
+
+.main{
+   margin-top: 5%;
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;  
+}
+
+.input-value{ 
+    padding: 5px;
     white-space:pre;
-    margin-right: 5px;
+    margin-right: 2px;
 }
-#btn{
-margin-left: 100px;
-margin-top: 50px;
-width: 100px;
-height: 50px;
-border-radius: 20px;
-color: white;
-background-color: #fa00fa;
+input:focus{
+    outline: none;
+    border: 2px solid #cdcdcd;
+
 }
-#btn:hover{
-    background-color: orangered;
-}
+
 .categories{
     text-align: center;
-    width: 100%;
-    height: max-content;
-    /* border: 5px solid black; */
-    margin: 0px;
 }
+
+#height, #weight{
+    border-collapse: collapse;
+    border: none;
+}
+
+#btn{
+margin-top: 5%;
+width: 150px;
+height: 30px;
+border-radius: 20px;
+border: 0;
+box-shadow: 2px 2px #cdcdcd;
+color: white;
+font-size: medium;
+background-color: #fa00fa;
+}
+
+#btn:hover{
+    background-color: #faebb3;
+    box-shadow: 2px 2px #fa00fa;
+    color: #fa00fa;
+    font-size: large;
+    cursor: pointer;
+}
+
 hr{
     border-color: #fa00fa;
+    border-collapse: collapse;
 }
+
 #mid{
     border-color: orangered;
-}
-.results{
-    /* border: 2px solid black; */
-    background-color: #fa00fa;
-    border-radius: 200px;
-    width: 300px;
-    margin: auto;
-    height: 120px;
-    border-style: double;
-}
-p{
-    /* color: orangered; */
-}
-img{
-    width: 300px; 
-    margin: auto;
-    height: 120px;
-    border-radius: 200px;
 }
