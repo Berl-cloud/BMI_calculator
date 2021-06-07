@@ -12,18 +12,19 @@
 
 <body>
 
-    <div class="head-bar">
-        <h1>Calculate Your Body Mass Index</h1>
-        <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and
-            women.</p>
-        <ul>
-            <li>Enter your weight and height using metric measures.</li>
-            <li>Select "Compute BMI" and your BMI will appear above.</li>
-        </ul>
-    </div>
-
     <div class="container">
-        <div id="results">  </div>
+        <div class="head-bar">
+            <h1>Calculate Your Body Mass Index</h1>
+            <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to men and
+                women.</p>
+            <ul>
+                <li>Enter your weight and height using metric measures.</li>
+                <li>Click on "Compute BMI" and your BMI will appear below.</li>
+            </ul>
+        </div>
+
+        <hr>
+        <div id="results"> </div>
 
         <div class="main">
 
@@ -37,13 +38,13 @@
 
             <div class="categories">
                 <h3> BMI Categories:</h3>
-                <p>Underweight = 18.5</p>
-                <hr>
-                <p>Normal weight = 18.5–24.9</p>
-                <hr id="mid">
-                <p>Overweight = 25–29.9</p>
-                <hr> 
-                <p>Obesity = BMI of 30 or greater</p>
+                <p>Underweight: BMI < 18.5</p>
+                        <hr>
+                        <p>Normal weight: BMI = 18.5–24.9</p>
+                        <hr id="mid">
+                        <p>Overweight: BMI = 25–29.9</p>
+                        <hr>
+                        <p>Obesity: BMI >= 30 </p>
             </div>
         </div>
     </div>

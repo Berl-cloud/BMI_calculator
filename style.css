@@ -1,23 +1,6 @@
 
-.head-bar{
-    background-color: white;
-    width: 60%;
-    margin: auto;
-    padding-left: 100px;
-    
-}
-
-ul{
-    padding-left: 22%;
-}
-
-h1{
-    padding-left: 18%;
-    
-}
-
-.head-bar p{
-    color: orangered;
+body{
+    background-color: #f3f3f3;
 }
 
 
@@ -26,9 +9,29 @@ h1{
     width: 40%;
     border: 3px solid #cdcdcd;
     box-shadow: 0px 5px 5px 5px #cdcdcd;
-    
     margin: auto;
+    margin-top: 2%;
     border-radius: 10px;
+}
+
+.head-bar{
+    width: 100%;
+    margin: 2%;
+}
+
+
+
+ ul{
+    padding-left: 17%; 
+} 
+
+h1{
+    padding-left: 6%;
+    
+}
+
+.head-bar p{
+    color: orangered;
 }
 
 #results{
@@ -42,7 +45,6 @@ h1{
 }
 
 .main{
-   margin-top: 5%;
     width: 100%;
     border-radius: 10px;
     display: grid;
@@ -51,13 +53,18 @@ h1{
 
 .input-value{ 
     padding: 5px;
-    white-space:pre;
+    white-space:pre-wrap;
     margin-right: 2px;
 }
 input:focus{
+    
     outline: none;
     border: 2px solid #cdcdcd;
 
+}
+
+input{
+    height: 5%;
 }
 
 .categories{
@@ -70,7 +77,8 @@ input:focus{
 }
 
 #btn{
-margin-top: 5%;
+
+margin-left: 35%;
 width: 150px;
 height: 30px;
 border-radius: 20px;
@@ -82,8 +90,8 @@ background-color: #fa00fa;
 }
 
 #btn:hover{
-    background-color: #faebb3;
-    box-shadow: 2px 2px #fa00fa;
+    background-color: #ffe380;
+    box-shadow: 2px 2px 1px 1px #fa00fa;
     color: #fa00fa;
     font-size: large;
     cursor: pointer;
@@ -96,4 +104,67 @@ hr{
 
 #mid{
     border-color: orangered;
+}
+
+
+@media only screen and (max-width: 768px) { 
+    .head-bar{
+        width: 100%;
+        padding-left: 1%;
+        font-size: x-small;
+    }
+        
+     ul, hr{
+       display: none;
+    } 
+    
+    h1{
+        text-align: center;  
+        padding-right: 10%; 
+        color: #fa00fa;      
+    }
+    
+    .head-bar p{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        margin-left: 10%;
+        border-radius: 10px;
+    }
+
+    .categories{
+        display: none;
+    }
+    
+    #btn{
+        margin-left: 18%;
+        width: 100%;
+        height: 30px;
+        border-radius: 20px;
+        border: 0;
+        box-shadow: 2px 2px #cdcdcd;
+        color: white;
+        font-size: medium;
+        background-color: #fa00fa;
+        }
+
+        #results{
+            text-align: center;
+            border-radius: 5px;
+            width: 99%;
+            font-weight: bold;
+            padding-top: 2%;
+            font-size: 1.1em;
+            color:  #948960 ;
+        }
+
+        .input-value{ 
+           
+            font-size: small;
+        }
+
+        input{
+            width: 150%;
+        }
 }
