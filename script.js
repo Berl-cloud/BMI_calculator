@@ -2,6 +2,7 @@ let button = document.getElementById("btn");
 
 function BMI() {
      let height = document.getElementById("height").value;
+
      let weight = document.getElementById("weight").value;
 
      if (height === '' || height <= 0) {
@@ -19,7 +20,7 @@ function BMI() {
                document.getElementById("results").innerHTML =
                     "Your BMI is " + bmi + ", so you are underweight.";
           }
-          else if (bmi > 18.5 && BMI < 24.9) {
+          else if (bmi >= 18.5 && bmi <= 24.9) {
                document.getElementById("results").innerHTML =
                     "Your BMI is " + bmi + ", so you have a normal weight.";
           }
